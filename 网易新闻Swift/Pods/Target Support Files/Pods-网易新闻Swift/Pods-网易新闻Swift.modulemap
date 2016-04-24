@@ -1,0 +1,6 @@
+framework module Pods_____Swift {
+  umbrella header "Pods-网易新闻Swift-umbrella.h"
+
+  export *
+  module * { export * }
+}

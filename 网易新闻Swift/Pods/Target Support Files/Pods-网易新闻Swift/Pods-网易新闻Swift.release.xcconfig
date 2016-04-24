@@ -1,0 +1,8 @@
+EMBEDDED_CONTENT_CONTAINS_SWIFT = YES
+FRAMEWORK_SEARCH_PATHS = $(inherited) "$CONFIGURATION_BUILD_DIR/AFNetworking" "$CONFIGURATION_BUILD_DIR/MJRefresh" "$CONFIGURATION_BUILD_DIR/SDWebImage" "$CONFIGURATION_BUILD_DIR/SnapKit" "$CONFIGURATION_BUILD_DIR/YYModel"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+OTHER_CFLAGS = $(inherited) -iquote "$CONFIGURATION_BUILD_DIR/AFNetworking/AFNetworking.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/MJRefresh/MJRefresh.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/SDWebImage/SDWebImage.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/SnapKit/SnapKit.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/YYModel/YYModel.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -framework "AFNetworking" -framework "MJRefresh" -framework "SDWebImage" -framework "SnapKit" -framework "YYModel"
+OTHER_SWIFT_FLAGS = $(inherited) "-D" "COCOAPODS"
+PODS_ROOT = ${SRCROOT}/Pods
